@@ -51,7 +51,7 @@ class _LoginThreeState extends State<LoginThree> {
                               fontWeight: FontWeight.w600),
                         ),
                         SizedBox(
-                          height: 70,
+                          height: 50,
                         ),
                         Padding(
                           padding: const EdgeInsets.only(left: 30, right: 30),
