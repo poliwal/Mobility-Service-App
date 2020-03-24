@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:mobility_services_app/screens/service.dart';
+import 'package:mobility_services_app/screens/services/service.dart';
 import 'package:mobility_services_app/models/destination_model.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class IconCard extends StatelessWidget {
   final IconData iconData;
   final String text;
+  final int item;
 
-  IconCard({this.iconData, this.text});
+  IconCard({this.iconData, this.text, this.item});
 
   @override
   Widget build(BuildContext context) {
@@ -29,8 +30,7 @@ class IconCard extends StatelessWidget {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                        builder: (context) =>
-                            DestinationScreen(destination: destinations[1])),
+                        builder: (context) => Services(item: item)),
                   );
                 },
               )),
