@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mobility_services_app/screens/authenticate/authenticate.dart';
 import 'package:mobility_services_app/services/auth.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 
 class Profile extends StatefulWidget {
   @override
@@ -9,6 +10,7 @@ class Profile extends StatefulWidget {
 
 class _ProfileState extends State<Profile> {
   final AuthService _auth = AuthService();
+//  dynamic user = await _auth.signInWithEmailAndPassword();
 
   @override
   Widget build(BuildContext context) {

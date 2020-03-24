@@ -28,9 +28,7 @@ class IconCard extends StatelessWidget {
                 onPressed: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(
-                        builder: (context) =>
-                            DestinationScreen(destination: destinations[1])),
+                    MaterialPageRoute(builder: (context) => CarpenterService()),
                   );
                 },
               )),
